@@ -248,7 +248,7 @@ INFO:root:rank=9 pagerank=6.4847e-02 url=www.lawfareblog.com/livestream-house-fo
 # Part 3:
 Input: 
 ```
-python3 pagerank_1.py --data=./lawfareblog.csv.gz --filter_ratio=0.4 --personalization_vector_query='terrorism' --search_query='-terrorism'
+python3 pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.4 --personalization_vector_query='terrorism' --search_query='-terrorism'
 ```
 Output:
 ```
