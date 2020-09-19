@@ -229,7 +229,7 @@ INFO:root:rank=9 pagerank=1.9068e-02 url=www.lawfareblog.com/congressional-homel
 # Part 2:
 Input:
 ```
-python3 pagerank_1.py --data=./lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' --search_query='-corona'
+python3 pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' --search_query='-corona'
 ```
 Output:
 ```
@@ -245,3 +245,23 @@ INFO:root:rank=8 pagerank=6.4847e-02 url=www.lawfareblog.com/us-moves-dismiss-ca
 INFO:root:rank=9 pagerank=6.4847e-02 url=www.lawfareblog.com/livestream-house-foreign-affairs-committee-holds-hearing-crisis-idlib
 
 ```
+# Part 3:
+Input: 
+```
+python3 pagerank_1.py --data=./lawfareblog.csv.gz --filter_ratio=0.4 --personalization_vector_query='terrorism' --search_query='-terrorism'
+```
+Output:
+```
+tensor([0., 0., 0.,  ..., 0., 0., 0.])
+INFO:root:rank=0 pagerank=4.3130e-01 url=www.lawfareblog.com/baghdadis-death-and-presidential-speech
+INFO:root:rank=1 pagerank=4.2368e-01 url=www.lawfareblog.com/its-not-only-iraq-and-syria
+INFO:root:rank=2 pagerank=4.1409e-01 url=www.lawfareblog.com/targeting-al-baghdadi-and-selective-notification-congress-assessing-issues
+INFO:root:rank=3 pagerank=4.0774e-01 url=www.lawfareblog.com/will-abandoning-kurds-result-mass-release-islamic-state-fighters
+INFO:root:rank=4 pagerank=3.5319e-01 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
+INFO:root:rank=5 pagerank=3.4891e-01 url=www.lawfareblog.com/tech-companies-must-fight-white-supremacy-regardless-political-dangers
+INFO:root:rank=6 pagerank=2.2116e-01 url=www.lawfareblog.com/livestream-nov-21-impeachment-hearings-0
+INFO:root:rank=7 pagerank=2.2115e-01 url=www.lawfareblog.com/opening-statement-david-holmes
+INFO:root:rank=8 pagerank=1.8676e-01 url=www.lawfareblog.com/depoliticizing-foreign-interference
+INFO:root:rank=9 pagerank=1.8491e-01 url=www.lawfareblog.com/trinidads-islamic-state-problem
+```
+
