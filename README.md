@@ -1,4 +1,4 @@
-# Pagerank
+# Pagerank Task 1:
 
 # Part 1:
 
@@ -126,38 +126,85 @@ python3 pagerank.py --data=./lawfareblog.csv.gz --verbose
 ```
 Output:
 ```
+DEBUG:root:computing indices
+DEBUG:root:computing values
+INFO:root:rank=0 pagerank=8.4156e+00 url=www.lawfareblog.com/lawfare-job-board
+INFO:root:rank=1 pagerank=8.4156e+00 url=www.lawfareblog.com/masthead
+INFO:root:rank=2 pagerank=8.4156e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
+INFO:root:rank=3 pagerank=8.4156e+00 url=www.lawfareblog.com/documents-related-mueller-investigation
+INFO:root:rank=4 pagerank=8.4156e+00 url=www.lawfareblog.com/topics
+INFO:root:rank=5 pagerank=8.4156e+00 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
+INFO:root:rank=6 pagerank=8.4156e+00 url=www.lawfareblog.com/snowden-revelations
+INFO:root:rank=7 pagerank=8.4156e+00 url=www.lawfareblog.com/support-lawfare
+INFO:root:rank=8 pagerank=8.4156e+00 url=www.lawfareblog.com/upcoming-events
+INFO:root:rank=9 pagerank=8.4156e+00 url=www.lawfareblog.com/our-comments-policy
 
 ```
 Input:
 ```
-$ python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --alpha=0.99999
+python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --alpha=0.99999
 
 ```
 Output:
 ```
+DEBUG:root:computing indices
+DEBUG:root:computing values
+INFO:root:rank=0 pagerank=1.0623e+01 url=www.lawfareblog.com/lawfare-job-board
+INFO:root:rank=1 pagerank=1.0623e+01 url=www.lawfareblog.com/masthead
+INFO:root:rank=2 pagerank=1.0623e+01 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
+INFO:root:rank=3 pagerank=1.0623e+01 url=www.lawfareblog.com/subscribe-lawfare
+INFO:root:rank=4 pagerank=1.0623e+01 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
+INFO:root:rank=5 pagerank=1.0623e+01 url=www.lawfareblog.com/documents-related-mueller-investigation
+INFO:root:rank=6 pagerank=1.0623e+01 url=www.lawfareblog.com/our-comments-policy
+INFO:root:rank=7 pagerank=1.0623e+01 url=www.lawfareblog.com/upcoming-events
+INFO:root:rank=8 pagerank=1.0623e+01 url=www.lawfareblog.com/topics
+INFO:root:rank=9 pagerank=1.0623e+01 url=www.lawfareblog.com/support-lawfare
 
 ```
 Input:
 ```
-$ python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2
-$ python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
+python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2
 ```
 Output:
 ```
-
+DEBUG:root:computing indices
+DEBUG:root:computing values
+INFO:root:rank=0 pagerank=4.2773e+00 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
+INFO:root:rank=1 pagerank=2.7717e+00 url=www.lawfareblog.com/livestream-nov-21-impeachment-hearings-0
+INFO:root:rank=2 pagerank=2.7533e+00 url=www.lawfareblog.com/opening-statement-david-holmes
+INFO:root:rank=3 pagerank=1.8721e+00 url=www.lawfareblog.com/senate-examines-threats-homeland
+INFO:root:rank=4 pagerank=1.7418e+00 url=www.lawfareblog.com/what-make-first-day-impeachment-hearings
+INFO:root:rank=5 pagerank=1.7411e+00 url=www.lawfareblog.com/livestream-house-armed-services-committee-hearing-f-35-program
+INFO:root:rank=6 pagerank=1.7348e+00 url=www.lawfareblog.com/whats-house-resolution-impeachment
+INFO:root:rank=7 pagerank=1.6384e+00 url=www.lawfareblog.com/congress-us-policy-toward-syria-and-turkey-overview-recent-hearings
+INFO:root:rank=8 pagerank=1.5597e+00 url=www.lawfareblog.com/summary-david-holmess-deposition-testimony
+INFO:root:rank=9 pagerank=9.1265e-01 url=www.lawfareblog.com/events
 ```
-
 
 Input:
 ```
-
-$ python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2
+python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
 
 ```
 Output:
 ```
+DEBUG:root:computing indices
+DEBUG:root:computing values
+INFO:root:rank=0 pagerank=4.7947e+01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
+INFO:root:rank=1 pagerank=4.7947e+01 url=www.lawfareblog.com/lawfare-live-covid-19-speech-and-surveillance
+INFO:root:rank=2 pagerank=7.2709e+00 url=www.lawfareblog.com/cost-using-zero-days
+INFO:root:rank=3 pagerank=2.1691e+00 url=www.lawfareblog.com/lawfare-podcast-former-congressman-brian-baird-and-daniel-schuman-how-congress-can-continue-function
+INFO:root:rank=4 pagerank=1.4214e+00 url=www.lawfareblog.com/events
+INFO:root:rank=5 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-increased-us-focus-indo-pacific
+INFO:root:rank=6 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-drill-maybe-drill
+INFO:root:rank=7 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-disjointed-operations-south-china-sea
+INFO:root:rank=8 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-song-oil-and-fire
+INFO:root:rank=9 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-us-china-divide-shangri-la
 
 ```
+# Pagerank Task 2:
+
+
 Input:
 ```
 
