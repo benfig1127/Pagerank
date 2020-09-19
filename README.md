@@ -18,7 +18,6 @@ INFO:root:rank=2 pagerank=3.4544e-01 url=5
 INFO:root:rank=3 pagerank=1.9498e-01 url=2
 INFO:root:rank=4 pagerank=9.9210e-02 url=3
 INFO:root:rank=5 pagerank=8.9347e-02 url=1
-
 ```
 # Part 2:
 
@@ -40,7 +39,6 @@ INFO:root:rank=6 pagerank=2.2727e-03 url=www.lawfareblog.com/livestream-house-ov
 INFO:root:rank=7 pagerank=2.2520e-03 url=www.lawfareblog.com/congressional-homeland-security-committees-seek-ways-support-state-federal-responses-coronavirus
 INFO:root:rank=8 pagerank=2.1878e-03 url=www.lawfareblog.com/paper-hearing-experts-debate-digital-contact-tracing-and-coronavirus-privacy-concerns
 INFO:root:rank=9 pagerank=2.0339e-03 url=www.lawfareblog.com/cyberlaw-podcast-how-israel-fighting-coronavirus
-
 ```
 Input:
 ```
@@ -58,7 +56,6 @@ INFO:root:rank=6 pagerank=2.5252e-02 url=www.lawfareblog.com/why-trump-cant-buy-
 INFO:root:rank=7 pagerank=2.2457e-02 url=www.lawfareblog.com/oral-argument-summary-qassim-v-trump
 INFO:root:rank=8 pagerank=2.1462e-02 url=www.lawfareblog.com/dc-circuit-court-denies-trump-rehearing-mazars-case
 INFO:root:rank=9 pagerank=2.1103e-02 url=www.lawfareblog.com/second-circuit-rules-mazars-must-hand-over-trump-tax-returns-new-york-prosecutors
-
 ```
 Input:
 ```
@@ -76,7 +73,6 @@ INFO:root:rank=6 pagerank=8.2581e-03 url=www.lawfareblog.com/announcing-united-s
 INFO:root:rank=7 pagerank=8.0561e-03 url=www.lawfareblog.com/trump-moves-cut-irans-oil-revenues-whats-his-endgame
 INFO:root:rank=8 pagerank=7.1939e-03 url=www.lawfareblog.com/us-names-iranian-revolutionary-guard-terrorist-organization-and-sanctions-international-criminal
 INFO:root:rank=9 pagerank=5.9405e-03 url=www.lawfareblog.com/iran-shoots-down-us-drone-domestic-and-international-legal-implications
-
 ```
 # Part 3:
 
@@ -96,8 +92,6 @@ INFO:root:rank=6 pagerank=8.4156e+00 url=www.lawfareblog.com/snowden-revelations
 INFO:root:rank=7 pagerank=8.4156e+00 url=www.lawfareblog.com/support-lawfare
 INFO:root:rank=8 pagerank=8.4156e+00 url=www.lawfareblog.com/upcoming-events
 INFO:root:rank=9 pagerank=8.4156e+00 url=www.lawfareblog.com/our-comments-policy
-
-
 ```
 Input:
 ```
@@ -115,14 +109,12 @@ INFO:root:rank=6 pagerank=1.7348e+00 url=www.lawfareblog.com/whats-house-resolut
 INFO:root:rank=7 pagerank=1.6384e+00 url=www.lawfareblog.com/congress-us-policy-toward-syria-and-turkey-overview-recent-hearings
 INFO:root:rank=8 pagerank=1.5597e+00 url=www.lawfareblog.com/summary-david-holmess-deposition-testimony
 INFO:root:rank=9 pagerank=9.1265e-01 url=www.lawfareblog.com/events
-
 ```
 # Part 4:
 
 Input:
 ```
 python3 pagerank.py --data=./lawfareblog.csv.gz --verbose 
-
 ```
 Output:
 ```
@@ -138,12 +130,10 @@ INFO:root:rank=6 pagerank=8.4156e+00 url=www.lawfareblog.com/snowden-revelations
 INFO:root:rank=7 pagerank=8.4156e+00 url=www.lawfareblog.com/support-lawfare
 INFO:root:rank=8 pagerank=8.4156e+00 url=www.lawfareblog.com/upcoming-events
 INFO:root:rank=9 pagerank=8.4156e+00 url=www.lawfareblog.com/our-comments-policy
-
 ```
 Input:
 ```
 python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --alpha=0.99999
-
 ```
 Output:
 ```
@@ -159,7 +149,6 @@ INFO:root:rank=6 pagerank=1.0623e+01 url=www.lawfareblog.com/our-comments-policy
 INFO:root:rank=7 pagerank=1.0623e+01 url=www.lawfareblog.com/upcoming-events
 INFO:root:rank=8 pagerank=1.0623e+01 url=www.lawfareblog.com/topics
 INFO:root:rank=9 pagerank=1.0623e+01 url=www.lawfareblog.com/support-lawfare
-
 ```
 Input:
 ```
@@ -184,7 +173,6 @@ INFO:root:rank=9 pagerank=9.1265e-01 url=www.lawfareblog.com/events
 Input:
 ```
 python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
-
 ```
 Output:
 ```
@@ -200,7 +188,6 @@ INFO:root:rank=6 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-drill-ma
 INFO:root:rank=7 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-disjointed-operations-south-china-sea
 INFO:root:rank=8 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-song-oil-and-fire
 INFO:root:rank=9 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-us-china-divide-shangri-la
-
 ```
 # Pagerank Task 2:
 
