@@ -252,7 +252,6 @@ python3 pagerank_1.py --data=./lawfareblog.csv.gz --filter_ratio=0.4 --personali
 ```
 Output:
 ```
-tensor([0., 0., 0.,  ..., 0., 0., 0.])
 INFO:root:rank=0 pagerank=4.3130e-01 url=www.lawfareblog.com/baghdadis-death-and-presidential-speech
 INFO:root:rank=1 pagerank=4.2368e-01 url=www.lawfareblog.com/its-not-only-iraq-and-syria
 INFO:root:rank=2 pagerank=4.1409e-01 url=www.lawfareblog.com/targeting-al-baghdadi-and-selective-notification-congress-assessing-issues
