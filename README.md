@@ -82,6 +82,76 @@ INFO:root:rank=9 pagerank=5.9405e-03 url=www.lawfareblog.com/iran-shoots-down-us
 
 Input:
 ```
+python3 pagerank.py --data=./lawfareblog.csv.gz
+```
+Output:
+```
+INFO:root:rank=0 pagerank=8.4156e+00 url=www.lawfareblog.com/lawfare-job-board
+INFO:root:rank=1 pagerank=8.4156e+00 url=www.lawfareblog.com/masthead
+INFO:root:rank=2 pagerank=8.4156e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
+INFO:root:rank=3 pagerank=8.4156e+00 url=www.lawfareblog.com/documents-related-mueller-investigation
+INFO:root:rank=4 pagerank=8.4156e+00 url=www.lawfareblog.com/topics
+INFO:root:rank=5 pagerank=8.4156e+00 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
+INFO:root:rank=6 pagerank=8.4156e+00 url=www.lawfareblog.com/snowden-revelations
+INFO:root:rank=7 pagerank=8.4156e+00 url=www.lawfareblog.com/support-lawfare
+INFO:root:rank=8 pagerank=8.4156e+00 url=www.lawfareblog.com/upcoming-events
+INFO:root:rank=9 pagerank=8.4156e+00 url=www.lawfareblog.com/our-comments-policy
+
+
+```
+Input:
+```
+python3 pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2
+```
+Output:
+```
+INFO:root:rank=0 pagerank=4.2773e+00 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
+INFO:root:rank=1 pagerank=2.7717e+00 url=www.lawfareblog.com/livestream-nov-21-impeachment-hearings-0
+INFO:root:rank=2 pagerank=2.7533e+00 url=www.lawfareblog.com/opening-statement-david-holmes
+INFO:root:rank=3 pagerank=1.8721e+00 url=www.lawfareblog.com/senate-examines-threats-homeland
+INFO:root:rank=4 pagerank=1.7418e+00 url=www.lawfareblog.com/what-make-first-day-impeachment-hearings
+INFO:root:rank=5 pagerank=1.7411e+00 url=www.lawfareblog.com/livestream-house-armed-services-committee-hearing-f-35-program
+INFO:root:rank=6 pagerank=1.7348e+00 url=www.lawfareblog.com/whats-house-resolution-impeachment
+INFO:root:rank=7 pagerank=1.6384e+00 url=www.lawfareblog.com/congress-us-policy-toward-syria-and-turkey-overview-recent-hearings
+INFO:root:rank=8 pagerank=1.5597e+00 url=www.lawfareblog.com/summary-david-holmess-deposition-testimony
+INFO:root:rank=9 pagerank=9.1265e-01 url=www.lawfareblog.com/events
+
+```
+# Part 4:
+
+Input:
+```
+python3 pagerank.py --data=./lawfareblog.csv.gz --verbose 
+
+```
+Output:
+```
+
+```
+Input:
+```
+$ python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --alpha=0.99999
+
+```
+Output:
+```
+
+```
+Input:
+```
+$ python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2
+$ python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
+```
+Output:
+```
+
+```
+
+
+Input:
+```
+
+$ python3 pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2
 
 ```
 Output:
