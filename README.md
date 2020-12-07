@@ -264,3 +264,24 @@ INFO:root:rank=8 pagerank=1.8676e-01 url=www.lawfareblog.com/depoliticizing-fore
 INFO:root:rank=9 pagerank=1.8491e-01 url=www.lawfareblog.com/trinidads-islamic-state-problem
 ```
 
+# Final Part from last HW:
+Input:
+```
+python3 pagerank.py --data=./lawfareblog.csv.gz --search_query='weapons'
+```
+Output:
+```
+INFO:gensim.models.utils_any2vec:loading projection weights from /home/bfigueroa20/gensim-data/glove-twitter-25/glove-twitter-25.gz
+INFO:gensim.models.utils_any2vec:loaded (1193514, 25) matrix from /home/bfigueroa20/gensim-data/glove-twitter-25/glove-twitter-25.gz
+INFO:gensim.models.keyedvectors:precomputing L2-norms of word weight vectors
+INFO:root:rank=0 pagerank=0.004593398422002792 url=www.lawfareblog.com/donald-trump-and-politically-weaponized-executive-branch
+INFO:root:rank=1 pagerank=0.004571518860757351 url=www.lawfareblog.com/why-did-you-wait-moral-emptiness-and-drone-strikes
+INFO:root:rank=2 pagerank=0.004439154639840126 url=www.lawfareblog.com/georgetown-laws-comprehensive-foreign-intelligence-law-collection
+INFO:root:rank=3 pagerank=0.0031917376909404993 url=www.lawfareblog.com/document-judge-allows-kill-list-lawsuit-go-forward
+INFO:root:rank=4 pagerank=0.0031107424292713404 url=www.lawfareblog.com/dc-district-court-dismisses-journalists-drone-lawsuit
+INFO:root:rank=5 pagerank=0.002662492683157325 url=www.lawfareblog.com/whatsapp-nso-group-lawsuit-and-limits-lawful-hacking
+INFO:root:rank=6 pagerank=0.0020231129601597786 url=www.lawfareblog.com/revived-cia-drone-strike-program-comments-new-policy
+INFO:root:rank=7 pagerank=0.0019667143933475018 url=www.lawfareblog.com/us-court-appeals-dc-circuit-dismisses-suit-over-us-drone-strike
+INFO:root:rank=8 pagerank=0.001178761012852192 url=www.lawfareblog.com/iran-shoots-down-us-drone-domestic-and-international-legal-implications
+INFO:root:rank=9 pagerank=0.0011619674041867256 url=www.lawfareblog.com/slaughterbots-and-other-anticipated-autonomous-weapons-problems
+```
