@@ -285,3 +285,41 @@ INFO:root:rank=7 pagerank=0.0019667143933475018 url=www.lawfareblog.com/us-court
 INFO:root:rank=8 pagerank=0.001178761012852192 url=www.lawfareblog.com/iran-shoots-down-us-drone-domestic-and-international-legal-implications
 INFO:root:rank=9 pagerank=0.0011619674041867256 url=www.lawfareblog.com/slaughterbots-and-other-anticipated-autonomous-weapons-problems
 ```
+Input:
+```
+python3 pagerank.py --data=./lawfareblog.csv.gz --search_query='drones'
+
+```
+Output:
+```
+INFO:root:rank=0 pagerank=0.005129670724272728 url=www.lawfareblog.com/trump-administrations-worrying-new-policy-israeli-settlements
+INFO:root:rank=1 pagerank=0.004657349083572626 url=www.lawfareblog.com/targeting-al-baghdadi-and-selective-notification-congress-assessing-issues
+INFO:root:rank=2 pagerank=0.004571518860757351 url=www.lawfareblog.com/why-did-you-wait-moral-emptiness-and-drone-strikes
+INFO:root:rank=3 pagerank=0.0031107424292713404 url=www.lawfareblog.com/dc-district-court-dismisses-journalists-drone-lawsuit
+INFO:root:rank=4 pagerank=0.0020231129601597786 url=www.lawfareblog.com/revived-cia-drone-strike-program-comments-new-policy
+INFO:root:rank=5 pagerank=0.0019667143933475018 url=www.lawfareblog.com/us-court-appeals-dc-circuit-dismisses-suit-over-us-drone-strike
+INFO:root:rank=6 pagerank=0.0017738215392455459 url=www.lawfareblog.com/whats-point-charging-foreign-state-linked-hackers
+INFO:root:rank=7 pagerank=0.0012884791940450668 url=www.lawfareblog.com/video-justice-department-announces-indictment-two-chinese-government-hackers
+INFO:root:rank=8 pagerank=0.0012075613485649228 url=www.lawfareblog.com/freedom-grieve-israeli-supreme-court-decision-combatants-peace-v-minister-defense
+INFO:root:rank=9 pagerank=0.0011972669744864106 url=www.lawfareblog.com/daisy-chain-associated-forces-potential-use-force-niger-against-al-mourabitoun
+
+```
+Input:
+```
+python3 pagerank.py --data=./lawfareblog.csv.gz --search_query='trump'
+
+```
+Output:
+```
+INFO:root:rank=0 pagerank=0.0015611632261425257 url=www.lawfareblog.com/document-justice-department-inspector-general-final-report-clinton-email-investigation
+INFO:root:rank=1 pagerank=0.0011021102545782924 url=www.lawfareblog.com/lawfare-podcast-bonus-edition-henry-farrell-and-abraham-newman-privacy-and-power
+INFO:root:rank=2 pagerank=0.0006545087671838701 url=www.lawfareblog.com/why-white-house-cant-stop-omarosa-manigault-newman-talking
+INFO:root:rank=3 pagerank=0.000641027872916311 url=www.lawfareblog.com/warren-has-plan-disinformation%E2%80%94what-about-everyone-else
+INFO:root:rank=4 pagerank=0.0005938531248830259 url=www.lawfareblog.com/document-special-counsel-indicts-12-russian-intelligence-officers-hacking-dnc-and-clinton-campaign
+INFO:root:rank=5 pagerank=0.0005507513997144997 url=www.lawfareblog.com/jim-comeys-statement-clinton-emails-quick-and-dirty-analysis
+INFO:root:rank=6 pagerank=0.0005424332921393216 url=www.lawfareblog.com/fbi-director-comeys-statement-hillary-clintons-use-private-email-server
+INFO:root:rank=7 pagerank=0.0005380449001677334 url=www.lawfareblog.com/video-secretary-state-kerrys-testimony-isil-aumf
+INFO:root:rank=8 pagerank=0.0005372720770537853 url=www.lawfareblog.com/gtmo-civil-suits-and-qualified-immunity-problematic-analysis-hamad-v-gates
+INFO:root:rank=9 pagerank=0.0005370082799345255 url=www.lawfareblog.com/oral-argument-preview-zivotofsky-v-kerry
+
+```
